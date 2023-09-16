@@ -5,7 +5,7 @@ module.exports =
 {
     test: function (creep)
     {
-        console.log(creep_parameters.number_harvester);
+        console.log(creep_parameters.CREEP_ROLE.HARVESTER);
     }
 
 }

@@ -20,8 +20,24 @@ const number_builder = 1;
 const body_300_builder = [WORK, WORK, CARRY, MOVE];
 
 
+
+
+const CREEP_ROLE =
+{
+    HARVESTER: 0
+    , RCL_UPGRADER: 1
+    , BUILDER: 2
+};
+
+
 module.exports =
 {
+
+
+
+
+
+
 
 
 }

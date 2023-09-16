@@ -1,6 +1,4 @@
-﻿var creep_harvester = require('role_harvester');
-var role_upgrader = require('role_upgrader');
-var role_builder = require('role_builder');
+﻿
 
 module.exports.loop = function () {
 

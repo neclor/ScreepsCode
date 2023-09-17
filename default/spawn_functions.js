@@ -1,4 +1,5 @@
-﻿const NUMBER_HARVESTER = 2;
+﻿
+const NUMBER_HARVESTER = 2;
 const CREEP_300_HARVESTER = [WORK, WORK, CARRY, MOVE];
 
 const NUMBER_UPGRADER = 1;
@@ -58,7 +59,7 @@ module.exports =
         if (Game.spawns['Spawn1'].spawning)
         {
             var spawning_creep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
-            Game.spawns['Spawn1'].room.visual.text(spawningCreep.memory.role, Game.spawns['Spawn1'].pos.x + 1, Game.spawns['Spawn1'].pos.y, { align: 'left', opacity: 0.8 });
+            Game.spawns['Spawn1'].room.visual.text(spawning_creep.memory.role, Game.spawns['Spawn1'].pos.x + 1, Game.spawns['Spawn1'].pos.y, { align: 'left', opacity: 0.8 });
         }
     },
 
@@ -68,7 +69,6 @@ module.exports =
 
         for (var creep_role in CREEPS_ROLES)
         {
-            console.log(CREEPS_ROLES[creep_role]);
             var creeps = _.filter(Game.creeps, (creep) => creep.memory.role == CREEPS_ROLES[creep_role]);
 
             if (creeps.length < CREEPS_LIMITS[CREEPS_ROLES[creep_role]])

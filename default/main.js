@@ -1,3 +1,4 @@
+
 // Game.spawns['Spawn1'].spawnCreep([WORK, WORK, CARRY, MOVE], "Name", {memory: {role: 'harvester'}});
 
 var spawn_functions = require('spawn_functions');

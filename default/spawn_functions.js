@@ -68,14 +68,14 @@ module.exports =
 
         for (var creep_role in CREEPS_ROLES)
         {
-            console.log(creep_role);
-            var creeps = _.filter(Game.creeps, (creep) => creep.memory.role == creep_role);
+            console.log(CREEPS_ROLES[creep_role]);
+            var creeps = _.filter(Game.creeps, (creep) => creep.memory.role == CREEPS_ROLES[creep_role]);
 
-            if (creeps.length < CREEPS_LIMITS[creep_role])
+            if (creeps.length < CREEPS_LIMITS[CREEPS_ROLES[creep_role]])
             {
-                var new_creep_name = creep_role + Game.time;
+                var new_creep_name = CREEPS_ROLES[creep_role] + Game.time;
 
-                Game.spawns['Spawn1'].spawnCreep(CREEPS_BODY_300[creep_role], new_creep_name, { memory: { role: creep_role } });
+                Game.spawns['Spawn1'].spawnCreep(CREEPS_BODY_300[CREEPS_ROLES[creep_role]], new_creep_name, { memory: { role: CREEPS_ROLES[creep_role] } });
             }
         }
     },

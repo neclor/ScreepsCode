@@ -27,7 +27,7 @@ const body_300_builder = [WORK, WORK, CARRY, MOVE];
 
 module.exports =
 {
-
+    exports.number_harvester;
 
 
 

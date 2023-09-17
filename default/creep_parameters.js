@@ -11,6 +11,8 @@
 */
 
 const number_harvester = 1;
+exports.number_harvester;
+
 const body_300_harvester = [WORK, WORK, CARRY, MOVE];
 
 const number_upgrader = 1;
@@ -22,19 +24,9 @@ const body_300_builder = [WORK, WORK, CARRY, MOVE];
 
 
 
-const CREEP_ROLE =
-{
-    HARVESTER: 0
-    , RCL_UPGRADER: 1
-    , BUILDER: 2
-};
-
 
 module.exports =
 {
-
-
-
 
 
 

@@ -10,6 +10,6 @@ var creep_builder = require('creep_builder');
 module.exports.loop = function ()
 {
     spawn_functions.move_creeps();
-    spawn_functions.spawn_creeps();
+    spawn_functions.spawn_creep();
     spawn_functions.show_spawning_creep_name();
 }

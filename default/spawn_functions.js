@@ -62,12 +62,13 @@ module.exports =
         }
     },
 
-    spawn_creeps: function ()
+    spawn_creep: function ()
     {
         this.clear_creeps_names();
 
         for (var creep_role in CREEPS_ROLES)
         {
+            console.log(creep_role);
             var creeps = _.filter(Game.creeps, (creep) => creep.memory.role == creep_role);
 
             if (creeps.length < CREEPS_LIMITS[creep_role])

@@ -1,6 +1,7 @@
 ﻿
 
-module.exports.loop = function () {
+module.exports.loop = function ()
+{
 
     for (var name in Memory.creeps) {
         if (!Game.creeps[name]) {
@@ -27,6 +28,16 @@ module.exports.loop = function () {
             Game.spawns['Spawn1'].pos.y,
             { align: 'left', opacity: 0.8 });
     }
+
+
+
+
+
+
+
+
+
+
 
     for (var name in Game.creeps) {
         var creep = Game.creeps[name];

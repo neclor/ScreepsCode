@@ -7,11 +7,9 @@ var creep_upgrader = require('creep_upgrader');
 var creep_builder = require('creep_builder');
 
 
-module.exports.loop = function () {
-
-    for (var name in Game.creeps) {
-        var creep = Game.creeps[name];
-        creep_harvester.run(creep);
-    }
-    spawn_functions.test();
+module.exports.loop = function ()
+{
+    spawn_functions.move_creeps();
+    spawn_functions.spawn_creeps();
+    spawn_functions.show_spawning_creep_name();
 }
